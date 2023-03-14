@@ -14,4 +14,6 @@
       header("location:login/index.php");
       die();
    }
+   
+   //pogi akoooooooooo wowow
 ?>
