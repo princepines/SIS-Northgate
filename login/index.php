@@ -1,9 +1,9 @@
 <html>
 <?php 
-    require '../head.php';
-    //include '../config.php';
+    $loc = str_replace("login", "", __DIR__);
+    require $loc . 'head.php';
 ?>
-    <body>
+ <body>
         <div id="login">
             <form action="login.php" method="post">
                 <label for="username" class="form-label"><b>Username</b></label>

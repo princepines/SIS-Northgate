@@ -11,7 +11,9 @@
    $login_session = $row['username'];
    
    if(!isset($_SESSION['login_user'])){
-      header("location:./login/index.php");
+      $loc = $_SERVER['DOCUMENT_ROOT'] . '/login/index.php';
+      header("location:$loc");
       die();
    }
+
 ?>
