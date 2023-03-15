@@ -1,3 +1,15 @@
+/* Where all fonts are resting. Use Google Fonts as much as possible. */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+/* Where all the CSS are resting. */
+
 body {
-    padding: 3%;
+    background-color: lightskyblue !important;
+}
+
+.container {
+    padding: 2% !important;
+    background-color: whitesmoke;
+    margin: 3%;
+    border-radius: 35px;
 }
