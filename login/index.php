@@ -19,7 +19,7 @@
             </form>
             </div>
             <div class="col">
-                <img src="<?php echo $loc . "welcome.png"; ?>" alt="welcome" width="500" height="500">
+                <img src="welcome.png" alt="welcome" width="500" height="500">
             </div>
         </div>
     </div>
