@@ -4,12 +4,23 @@
 /* Where all the CSS are resting. */
 
 body {
-    background-color: lightskyblue !important;
+    background-color: #4a89dc !important;
 }
 
 .container {
     padding: 2% !important;
     background-color: whitesmoke;
-    margin: 3%;
+    margin: 1%;
     border-radius: 35px;
+}
+
+.btn {
+    transition: all .7s !important;
+}
+
+.btn-hover:hover {
+    transition: all .5s !important;
+    color: #4a89dc !important;
+    background-color: #fff !important;
+    border-color: #4a89dc !important;
 }
