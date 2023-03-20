@@ -4,7 +4,7 @@
 /* Where all the CSS are resting. */
 
 body {
-    background-color: #4a89dc !important;
+    background-color: whitesmoke !important;
 }
 
 .container {
@@ -23,4 +23,8 @@ body {
     color: #4a89dc !important;
     background-color: #fff !important;
     border-color: #4a89dc !important;
+}
+
+.navbar {
+    padding-left: 2% !important;
 }

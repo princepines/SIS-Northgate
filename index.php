@@ -14,6 +14,9 @@
       $loc = $_SERVER['DOCUMENT_ROOT'] . '/login/index.php';
       header("location:$loc");
       die();
+   } else {
+      header("location: profile.php");
+      die();
    }
 
 ?>
