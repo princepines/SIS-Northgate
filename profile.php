@@ -12,6 +12,6 @@
     <!-- <h1><?php //echo "Hello! " . $firstname;?></h1> -->
     <img src="" width="500" height="500"> <!-- Profile Picture on right side -->
     <!-- insert some student information -->
-
+    <?php echo "Info"; ?>
 </body>
 </html>
