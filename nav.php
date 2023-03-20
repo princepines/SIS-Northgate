@@ -8,6 +8,7 @@
       <a class="nav-item nav-link active" href="/">Home</a>
       <a class="nav-item nav-link" href="subjects.php">Subjects</a>
       <a class="nav-item nav-link" href="payments.php">Payments</a>
+      <a class="nav-item nav-link" href="about.php">About</a>      
     </div>
   </div>
 </nav>
