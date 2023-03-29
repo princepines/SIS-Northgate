@@ -1,26 +1,15 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>View Grades Website</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+    <?php 
+        require 'head.php';
+    ?>
+   <title><?php //echo $lastname . "," . $firstname . " Grades";?></title>
 </head>
 
 <body style="background-color: #00000">
-	<header>
-		<nav>
-			<ul class="flex content m-5 border justify-around text-3xl p-3" style="background-color: #159895">
-				<li><a href="#" class="hover:text-red-500">Home</a></li>
-				<li><a href="#" class="hover:text-red-500">About</a></li>
-				<li><a href="#" class="hover:text-red-500">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-  <nav>
-  <h1 class="border flex content m-5 justify-center text-6xl font-bold p-5" style="background-color: #159895">
-  Student Information</h1>
-  </nav>  
+	<!-- Navigation Bar -->
+  <?php 
+        require 'nav.php';
+    ?>
 
   <!--PHP CODE HERE JUST ADD LABEL-->
 	<main class="border-8 rounded flex flex-row content h-screen m-5" style="background-color: #57C5B6">

@@ -2,13 +2,17 @@
    $loc = str_replace("login", "", __DIR__);
    /*
    $profile = $loc . 'profile.php';
+   $registrar = $loc . 'reg.php';
+   $cashier = $loc . 'cash.php';
+   $teacher = $loc . 'teacher.php';
    include("config.php");
    session_start();
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+      $role = mysqli_real_escape_string($db,$_POST['role']);
       
       $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
       $result = mysqli_query($db,$sql);
@@ -18,11 +22,26 @@
       $count = mysqli_num_rows($result);
       
 		
-      if($count == 1) {
+      if($count == 1 && $role == "student") {
          session_register("myusername");
          $_SESSION['login_user'] = $myusername;
          
          header("location: $profile");
+      }elseif ($count == 1 && $role == "registrar") {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: $registar");
+      }elseif ($count == 1 && $role == "cashier") {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: $cashier");
+      }elseif ($count == 1 && $role == "teacher") {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: $teacher");
       }else {
          $error = "Your Login Name or Password is invalid";
       }
@@ -36,14 +55,11 @@
 ?>
 <title>SIS Login</title>
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
-
-</head>
  <body>
     <div class="container" class="md:flex flex-col-reverse">
         <div class="row">
             <div class="col">
-            <form action="login.php" method="post">
+            <form action="" method="post">
                 <!--NEW-->
                 <div class="lg:mt-2 flex container justify-content-center font-extrabold md:text-sm">
                 <h1 class="text-5xl">USER LOGIN</h1>
