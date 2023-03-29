@@ -4,13 +4,13 @@
 /* Where all the CSS are resting. */
 
 body {
-    background-color: whitesmoke !important;
+    background-color: #e0e4e3 !important;
 }
 
 .container {
-    padding: 2% !important;
-    background-color: whitesmoke;
-    margin: 1%;
+    padding: 5% !important;
+    background-color: #3cb4a4;
+    margin: 7%;
     border-radius: 35px;
 }
 
@@ -20,9 +20,9 @@ body {
 
 .btn-hover:hover {
     transition: all .5s !important;
-    color: #4a89dc !important;
-    background-color: #fff !important;
-    border-color: #4a89dc !important;
+    color: #7209B7 !important;
+    background-color: #e0d9d9 !important;
+    border-color: #7209B7 !important;
 }
 
 .navbar {

@@ -36,11 +36,18 @@
 ?>
 <title>SIS Login</title>
 </head>
- <body style="background-color: #4a89dc !important;">
-    <div class="container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+
+</head>
+ <body>
+    <div class="container" class="md:flex flex-col-reverse">
         <div class="row">
             <div class="col">
             <form action="login.php" method="post">
+                <!--NEW-->
+                <div class="lg:mt-2 flex container justify-content-center font-extrabold md:text-sm">
+                <h1 class="text-5xl">USER LOGIN</h1>
+                </div>
                 <label for="username" class="form-label" style="font-family: Kanit, sans-serif;"><h2>Student ID</h2></label>
                 <input type="text" class="form-control" name="username" placeholder="0123456789012" autocomplete="off" required maxlength="12"><br>
                 <label for="password" class="form-label" style="font-family: Kanit, sans-serif;"><h2>Password</h2></label>
